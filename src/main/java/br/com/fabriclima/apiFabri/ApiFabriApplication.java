@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiFabriApplication {
+public class    ApiFabriApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ApiFabriApplication.class, args);

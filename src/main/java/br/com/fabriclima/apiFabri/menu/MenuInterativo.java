@@ -16,8 +16,21 @@ public class MenuInterativo {
 
     public void iniciar() {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            // Mensagem de boas-vindas
+            System.out.println("Olá, esse é a ApiFabri, aqui compartilhamos informações sobre o clima na cidade de Coronel Fabriciano-MG,");
+            System.out.println("além de buscas de resultados do clima de outras cidades do Brasil e do Mundo.");
+
+            // Exibindo dados climáticos de Coronel Fabriciano
+            try {
+                String resultadoCoronelFabriciano = weatherService.getWeatherForCity();
+                System.out.println(resultadoCoronelFabriciano);
+            } catch (IOException | InterruptedException e) {
+                System.out.println("Erro ao obter dados climáticos de Coronel Fabriciano: " + e.getMessage());
+            }
+
+            // Menu interativo
             while (true) {
-                System.out.println("Digite o nome da cidade para obter a previsão do tempo ou 'sair' para encerrar:");
+                System.out.println("\nDigite o nome da cidade para obter a previsão do tempo ou 'sair' para encerrar:");
                 String input = reader.readLine();
 
                 if (input.equalsIgnoreCase("sair")) {

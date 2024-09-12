@@ -15,6 +15,7 @@ public class WeatherService {
 
     private static final String BASE_URL = "https://api.weatherbit.io/v2.0/current";
     private static final String API_KEY = "fdee117d4b904a5f9c31a769b7ce5fe6"; // Substitua por sua chave de API
+    private static final String CITY_NAME = "Coronel Fabriciano";
 
     public String searchLocation(String query) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
@@ -39,6 +40,10 @@ public class WeatherService {
         } else {
             return "Erro ao buscar localização. Código de status: " + response.statusCode();
         }
+    }
+
+    public String getWeatherForCity() throws IOException, InterruptedException {
+        return searchLocation(CITY_NAME);
     }
 
     private String getWeather(JSONObject jsonResponse) {
