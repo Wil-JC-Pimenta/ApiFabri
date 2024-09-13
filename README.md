@@ -1,10 +1,8 @@
 # Projeto FullStack - Aplicação de Consulta de Clima
 ## Este é um projeto fullstack que consulta a previsão do tempo para cidades utilizando uma API externa (Watherbit) e exibe os resultados em uma interface web desenvolvida com React. O backend foi construído com Spring Boot, enquanto o frontend foi implementado em React.
-#### Esse projeto foi desenvolvido para fins educacionais para a aplicação de
-#### tecnologias e frameworks como Java, SpringBoot, React, JavaScript, Docker.
-### É um projeto piloto que está em fase de desenvolvimento.
 
 ### Funcionalidades
+* Exibe inicialmente informações do clima para a cidade de Coronel Fabriciano-MG.
 * Consultar a previsão do tempo para qualquer cidade.
 * Exibir dados climáticos como temperatura, umidade e velocidade do vento.
 * Exibir sugestões de vestimenta com base na temperatura.
