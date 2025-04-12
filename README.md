@@ -67,6 +67,7 @@ npm start
 
 ### Exemplo de arquitetura de pastas:
 
+```textplan
 projeto-fullstack-clima/
 ├── backend/
 │   ├── src/
@@ -85,7 +86,7 @@ projeto-fullstack-clima/
 │   ├── public/
 │   │   └── index.html                   # Arquivo HTML principal
 ├── README.md
-
+```
 
 
 
